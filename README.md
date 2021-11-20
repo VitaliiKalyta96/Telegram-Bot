@@ -1,7 +1,9 @@
 # Telegram-Bot-Simple
 
 Short instruction settings. Start actions:
+
 Log in in your account telegram. Search BotFather.
+
 Sending these command : /newbot.
 Choose a name for your bot and write.
 Choose a username for your bot. It must end in `bot`. Like this, for example: UserBot or user_bot.
