@@ -1,6 +1,10 @@
 # Telegram-Bot-Simple
 
+Telegram bot.
+
 Short instruction settings. Start actions:
+
+Install library python-telegram-bot in python console next command: pip install python-telegram-bot.
 
 Log in in your account telegram. Search BotFather.
 

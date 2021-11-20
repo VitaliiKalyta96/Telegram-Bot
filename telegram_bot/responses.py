@@ -8,10 +8,10 @@ def sample_responses(input_text):
     if user_message in ("hello", "hi", "привіт", "hello!", "hi!", "привіт!"):
         return "Hello!"
 
-    if user_message in ("how are you", "how's it going", "how are you?", "how's it going?"):
+    if user_message in ("how are you", "how's it going", "how are you?", "how's it going?", "як справи", "як справи?"):
         return "Excellent!"
 
-    if user_message in ("who are you", "who are you?"):
+    if user_message in ("who are you", "who are you?", "хто ти?"):
         return "I am Simple Bot. My username agent007_superbot." \
                "=)"
 
