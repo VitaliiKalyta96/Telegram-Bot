@@ -12,7 +12,7 @@ Choose a username for your bot. It must end in `bot`. Like this, for example: Us
 
 Done! Congratulations on your new bot. You will find it at t.me/"user_name". Created API.
 
-This Api insert in file env.py under variable API_KEY="...."
+This Api copy in file env.py under variable API_KEY="...."
 
 In order to, run Telegram-Bot-Simple you will must entry main.py and click button Run or 
 
