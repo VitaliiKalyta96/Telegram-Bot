@@ -1,11 +1,12 @@
-import env as keys
+import config
 from telegram.ext import *
-import responses as r
 import time
-import links
+from v1 import links, responses as r
 
 
-print("Bot started...")
+updater = Updater(config.API_KEY, use_context=True)
+
+print("Bot started.")
 
 
 def start_command(update, context):
@@ -31,14 +32,10 @@ def error(update, context):
 
 
 def main():
-    updater = Updater(keys.API_KEY, use_context=True)
-    dp = updater.dispatcher
-
-    dp.add_handler(CommandHandler("start", start_command))
-    dp.add_handler(CommandHandler("help", help_command))
-
-    dp.add_handler(MessageHandler(Filters.text, handle_message))
-    dp.add_error_handler(error)
+    updater.dispatcher.add_handler(CommandHandler("start", start_command))
+    updater.dispatcher.add_handler(CommandHandler("help", help_command))
+    updater.dispatcher.add_handler(MessageHandler(Filters.text, handle_message))
+    updater.dispatcher.add_error_handler(error)
 
     updater.start_polling()
     updater.idle()

@@ -1,5 +1,5 @@
 from datetime import datetime
-import links
+from v1 import links
 
 
 def sample_responses(input_text):
